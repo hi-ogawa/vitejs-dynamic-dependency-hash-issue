@@ -1,0 +1,22 @@
+{
+  "name": "@vitejs-investigation/app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "start": "vite build && vite preview --open"
+  },
+  "dependencies": {
+    "@vitejs-investigation/dynamic-import": "workspace:^",
+    "picocolors": "1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
+  },
+  "installConfig": {
+    "hoistingLimits": "dependencies"
+  }
+}

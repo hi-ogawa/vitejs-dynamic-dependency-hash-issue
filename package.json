@@ -1,0 +1,20 @@
+{
+  "name": "vitejs-investigation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn workspace @vitejs-investigation/dynamic-import run build && yarn workspace @vitejs-investigation/app run build",
+    "start": "yarn workspace @vitejs-investigation/app run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "packageManager": "yarn@4.1.0",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}

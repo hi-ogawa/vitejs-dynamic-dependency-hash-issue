@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    /* Base Options */
+    "allowJs": false,
+    "esModuleInterop": true,
+    "target": "ES2022",
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true,
+    /* Resolutions */
+    "typeRoots": ["./node_modules/@types"],
+    /* Strictness */
+    "strict": true,
+    "useUnknownInCatchVariables": false,
+    /* NOT transpiling with TypeScript: */
+    "moduleResolution": "Node",
+    "module": "ESNext",
+    "noEmit": true,
+    /* Building for a library: */
+    "declaration": true
+  },
+  "files": ["src/index.ts"]
+}

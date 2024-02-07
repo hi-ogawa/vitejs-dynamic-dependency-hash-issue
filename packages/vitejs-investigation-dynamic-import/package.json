@@ -1,0 +1,37 @@
+{
+  "name": "@vitejs-investigation/dynamic-import",
+  "version": "0.0.1",
+  "description": "Dynamic library loader",
+  "author": "",
+  "license": "UNLICENSED",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": {
+        "import": "./dist/index.d.ts",
+        "require": "./dist/index.d.cts"
+      },
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "picocolors": "1.0.0",
+    "tsup": "^8.0.1",
+    "typescript": "~5.2.2"
+  },
+  "scripts": {
+    "build": "tsup",
+    "type-check": "tsc --noEmit"
+  },
+  "installConfig": {
+    "hoistingLimits": "dependencies"
+  }
+}
