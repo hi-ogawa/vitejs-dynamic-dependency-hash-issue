@@ -3,3 +3,7 @@ export async function dynamicImport() {
 
   console.log("dynamicImport", { dependency });
 }
+
+export async function getDep() {
+  return import("picocolors");
+}
